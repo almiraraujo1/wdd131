@@ -20,11 +20,11 @@ header {
     color: white;
 }
 
-header h1 {
+#course-title {
+    display: block;
     margin: 0;
     padding: 1rem;
     text-align: center;
-    background-color: #176b5b;
 }
 
 header span {
@@ -171,40 +171,3 @@ footer {
     background-color: #263238;
     color: white;
 }
-
-
-/* ================================
-   RESPONSIVIDADE
-================================
-
-@media (max-width: 700px) {
-
-    .navigation {
-        flex-direction: column;
-    }
-
-    .navigation li {
-        width: 100%;
-    }
-
-    .card-container {
-        grid-template-columns: 1fr;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-    }
-
-    .about-content img {
-        margin: 0 auto;
-    }
-
-    .history-content {
-        grid-template-columns: 1fr;
-    }
-
-    .history-content img {
-        margin: 0 auto;
-    }
-}
-*/
