@@ -43,12 +43,11 @@ header {
 
 nav {
     display: flex;
+    justify-content: center;
 }
 
-.navigation {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+nav ul {
+    display: none;
 
     margin: 0;
     padding: 0;
@@ -56,7 +55,15 @@ nav {
     list-style: none;
 }
 
-.navigation a {
+/* MENU ABERTO */
+
+nav ul.show {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+nav a {
     display: block;
 
     padding: 0.75rem 1rem;
@@ -70,19 +77,6 @@ nav {
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
-}
-
-/* MENU FECHADO */
-
-.navigation {
-    display: none;
-}
-
-/* MENU ABERTO */
-
-.navigation.show {
-    display: flex;
-    flex-direction: column;
 }
 
 /* BOTÃO MENU */
@@ -106,7 +100,7 @@ nav {
 
 /* EFEITO HOVER */
 
-.navigation a:hover {
+nav a:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
 }

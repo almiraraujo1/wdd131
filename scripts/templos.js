@@ -10,7 +10,7 @@ document.querySelector("#ultimaModificacao").textContent =
 // MENU HAMBÚRGUER
 
 const menuButton = document.querySelector("#menu-button");
-const navigation = document.querySelector(".navigation");
+const navigation = document.querySelector("nav ul");
 
 menuButton.addEventListener("click", () => {
 
