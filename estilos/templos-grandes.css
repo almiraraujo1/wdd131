@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        padding: 2rem;
+    }
+
+    /* NAVEGAÇÃO */
+
+    #menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* GALERIA */
+
+    .album-templos {
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+
+        gap: 2rem;
+    }
+
+    /* FIGURES */
+
+    figure {
+        padding: 1.25rem;
+
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+    figure:hover {
+        transform: translateY(-5px);
+
+        box-shadow:
+            0 6px 15px rgba(0, 0, 0, 0.18);
+    }
+}    

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/* VARIÁVEIS DE CORES */
+
+:root {
+    --cor-principal: #183a4a;
+    --cor-secundaria: #2c6e8f;
+    --cor-destaque: #d9a441;
+    --cor-fundo: #f4f6f7;
+    --cor-branco: #ffffff;
+    --cor-texto: #263238;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* NAVEGAÇÃO */
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+
+    padding: 0.75rem 1rem;
+
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-weight: 500;
+
+    border-radius: 6px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+/* MENU FECHADO */
+
+.navigation {
+    display: none;
+}
+
+/* MENU ABERTO */
+
+.navigation.show {
+    display: flex;
+    flex-direction: column;
+}
+
+/* BOTÃO MENU */
+
+#menu-button {
+    display: block;
+
+    margin: 0 auto 1rem;
+
+    padding: 0.5rem 0.8rem;
+
+    background-color: transparent;
+    color: var(--cor-branco);
+
+    border: 2px solid var(--cor-branco);
+    border-radius: 6px;
+
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* EFEITO HOVER */
+
+.navigation a:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
+
+/* MAIN */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+main h1 {
+    margin: 0 0 1.5rem;
+
+    color: var(--cor-principal);
+
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+}
+
+/* ÁLBUM DE TEMPLOS */
+
+.album-templos {
+    display: grid;
+
+    /* Mobile: uma coluna */
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+}
+
+/* FIGURE */
+
+figure {
+    margin: 0;
+    padding: 1rem;
+
+    background-color: var(--cor-branco);
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+figure img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 0.75rem;
+
+    color: var(--cor-principal);
+
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+
+    text-align: center;
+}
