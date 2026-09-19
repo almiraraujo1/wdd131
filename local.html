@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brasil – Floresta Amazônica - WDD 131</title>
+
+    <meta name="description"
+        content="WDD 131 - Página sobre o Brasil, com informações gerais e dados sobre o clima na Floresta Amazônica">
+    <meta name="author" content="Almir Araujo">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
+    <link rel="stylesheet" href="estilos/local-mobile.css">
+    <link rel="stylesheet" href="estilos/local-grande.css">
+    <script src="scripts/local.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Brasil</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 768px)"
+                    srcset="imagens/brasil-imagem-grande.webp"
+                    width="1200" height="800">
+            <img src="imagens/brasil-imagem-mobile.webp"
+                 alt="Vista aérea da Floresta Amazônica com o rio cortando a mata densa"
+                 width="600" height="800">
+        </picture>
+
+        <section class="dados">
+            <h2>Dados</h2>
+            <dl>
+                <dt>Área:</dt><dd>8.515.767 km²</dd>
+                <dt>População:</dt><dd>203.080.756</dd>
+                <dt>Capital:</dt><dd>Brasília</dd>
+                <dt>Idioma:</dt><dd>Português</dd>
+                <dt>Moeda:</dt><dd>Real (BRL)</dd>
+                <dt>Fuso horário:</dt><dd>UTC-3</dd>
+                <dt>Código de chamada:</dt><dd>+55</dd>
+                <dt>Domínio de internet:</dt><dd>.br</dd>
+            </dl>
+        </section>
+
+        <section class="clima">
+            <h2>Clima</h2>
+            <img src="imagens/clima.svg" alt="Ícone de tempo parcialmente nublado"
+                 class="icone-clima" width="64" height="64">
+            <dl>
+                <dt>Temperatura:</dt><dd><span id="temperatura">28</span> °C</dd>
+                <dt>Condições:</dt><dd>Parcialmente nublado</dd>
+                <dt>Vento:</dt><dd><span id="vento">5</span> km/h</dd>
+                <dt>Sensação térmica:</dt><dd id="sensacao"></dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> Almir Araujo | Brasil</p>
+        <p>Última modificação: <span id="ultima-modificacao"></span></p>
+    </footer>    
+</body>
+</html>
