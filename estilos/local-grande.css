@@ -4,7 +4,6 @@
         font-size: 3rem;
     }
 
-    /* A imagem vira "fundo" e os cards ficam por cima dela */
     main {
         position: relative;
     }
@@ -34,7 +33,6 @@
         right: 2rem;
     }
 
-    /* Título como "etiqueta" verde no topo do card */
     h2 {
         margin: calc(var(--espaco) * -1) calc(var(--espaco) * -1) var(--espaco);
         padding: 0.5rem var(--espaco);
@@ -43,12 +41,10 @@
         text-align: left;
     }
 
-    /* Emoji do clima via pseudoelemento, logo após o título */
     .clima h2::after {
         content: " ⛅";
     }
 
-    /* No desktop o ícone SVG some, porque vale o emoji */
     .icone-clima {
         display: none;
     }
