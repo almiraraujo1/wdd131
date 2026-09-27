@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 131 – Tarefa Álbum de Fotos - Almir Araujo</title>
+
+    <meta name="description"
+        content="WDD 131 - Álbum de Fotos dos Templos, Pagina Inicial, Antigo, Novo, Grande, Pequeno">
+
+    <meta name="author" content="Almir Araujo">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
+    <script src="scripts/templos-filtrados.js" defer></script>
+
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-grande-filtrados.css">
+
+</head>
+<body>
+    <header>
+
+    <span id="course-title"> 
+            Álbum do Templo
+    </span>
+
+    <nav>
+
+         <button id="menu-button" aria-label="Abrir menu">
+            ☰
+        </button> 
+
+        <ul>
+
+            <li>
+                <a href="#" data-filtro="todos" class="link-filtro">Página Inicial</a>
+            </li>
+
+            <li>
+                <a href="#" data-filtro="antigo" class="link-filtro">Antigo</a>
+            </li>
+
+            <li>
+                <a href="#" data-filtro="novo" class="link-filtro">Novo</a>
+            </li>
+
+            <li>
+                <a href="#" data-filtro="grande" class="link-filtro">Grande</a>
+            </li>
+
+            <li>
+                <a href="#" data-filtro="pequeno" class="link-filtro">Pequeno</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    </header>
+    
+    <main>
+
+    <h1 id="titulo-pagina">Página Inicial</h1>
+
+    <section class="album-templos" id="lista-templos">
+        <!-- Os cartões de templo serão inseridos aqui via JavaScript -->
+    </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="anoatual"></span>
+            | Almir Araujo | Brasil
+        </p>
+
+        <p>
+            <span id="ultimaModificacao"></span>
+        </p>
+
+    </footer>
+</body>
+</html>
