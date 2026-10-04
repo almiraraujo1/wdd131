@@ -1,0 +1,94 @@
+/* Planejamento do site - Fire Fight */
+
+body {
+  font-family: "Source Sans 3", Arial, sans-serif;
+  color: #14213d;
+  background-color: #f5f5f2;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Barlow Condensed", Arial, sans-serif;
+}
+
+h2 {
+  color: #c1272d;
+}
+
+a {
+  color: #c1272d;
+}
+
+header, footer {
+  background-color: #14213d;
+  color: #f5f5f2;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Logotipo */
+.logo {
+  display: inline-block;
+  background-color: #c1272d;
+  color: #f5f5f2;
+  font-family: "Barlow Condensed", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-bottom: 5px solid #e0b04a;
+}
+
+/* Cores */
+.cor {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #5b6475;
+  vertical-align: middle;
+}
+.azul { background-color: #14213d; }
+.vermelho { background-color: #c1272d; }
+.branco { background-color: #f5f5f2; }
+.areia { background-color: #e0b04a; }
+.cinza { background-color: #5b6475; }
+
+/* Tipografia */
+.fonte-titulo {
+  font-family: "Barlow Condensed", Arial, sans-serif;
+  font-size: 1.8rem;
+  color: #c1272d;
+}
+.fonte-corpo {
+  font-family: "Source Sans 3", Arial, sans-serif;
+}
+
+/* Wireframes */
+.wireframe {
+  border: 2px solid #14213d;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.mobile {
+  width: 250px;
+}
+.caixa {
+  border: 2px dashed #5b6475;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.colunas {
+  display: flex;
+  gap: 10px;
+}
+.colunas .caixa {
+  flex: 1;
+}
