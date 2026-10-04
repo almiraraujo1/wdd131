@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Produto</title>
+    <meta name="description" content="Formulário para avaliar produtos instalados.">
+    <meta name="author" content="Almir Araujo">
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <script src="scripts/formulario.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Avaliação do Produto</h1>
+    </header>
+
+    <main>
+        <form action="avaliacao.html" method="get">
+
+            <!-- Nome do Produto -->
+            <div class="campo">
+                <label for="produto">Nome do Produto</label>
+                <select id="produto" name="produto" required>
+                    <option value="" disabled selected>Selecione um Produto...</option>
+                    <!-- As outras opções são criadas pelo JavaScript -->
+                </select>
+            </div>
+
+            <!-- Classificação Geral -->
+            <fieldset class="campo">
+                <legend>Classificação Geral</legend>
+                <div class="estrelas">
+                    <div class="estrela">
+                        <label for="nota1">★</label>
+                        <input type="radio" id="nota1" name="classificacao" value="1" required>
+                    </div>
+                    <div class="estrela">
+                        <label for="nota2">★★</label>
+                        <input type="radio" id="nota2" name="classificacao" value="2" required>
+                    </div>
+                    <div class="estrela">
+                        <label for="nota3">★★★</label>
+                        <input type="radio" id="nota3" name="classificacao" value="3" required>
+                    </div>
+                    <div class="estrela">
+                        <label for="nota4">★★★★</label>
+                        <input type="radio" id="nota4" name="classificacao" value="4" required>
+                    </div>
+                    <div class="estrela">
+                        <label for="nota5">★★★★★</label>
+                        <input type="radio" id="nota5" name="classificacao" value="5" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Data de Instalação -->
+            <div class="campo">
+                <label for="instalacao">Data de Instalação</label>
+                <input type="date" id="instalacao" name="instalacao" required>
+            </div>
+
+            <!-- Recursos Úteis -->
+            <fieldset class="campo">
+                <legend>Quais recursos você achou úteis no produto?</legend>
+                <p class="dica">(Marque todos que se aplicam)</p>
+                <div class="opcao">
+                    <input type="checkbox" id="durabilidade" name="recursos" value="durabilidade">
+                    <label for="durabilidade">Durabilidade</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="facilidade" name="recursos" value="facilidade">
+                    <label for="facilidade">Facilidade de Uso</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="desempenho" name="recursos" value="desempenho">
+                    <label for="desempenho">Desempenho</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="design" name="recursos" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+
+            <!-- Avaliação Escrita -->
+            <div class="campo">
+                <label for="avaliacao">Avaliação Escrita <span class="opcional">(Opcional)</span></label>
+                <textarea id="avaliacao" name="avaliacao" rows="5"></textarea>
+            </div>
+
+            <!-- Nome de Usuário -->
+            <div class="campo">
+                <label for="usuario">Seu Nome <span class="opcional">(Opcional)</span></label>
+                <input type="text" id="usuario" name="usuario">
+            </div>
+
+            <!-- Botão de Envio -->
+            <input type="submit" value="Publicar Avaliação">
+        </form>
+    </main>
+
+    <footer>
+        <p>©<span id="ano"></span> | Almir Araujo | Brasil</p>
+        <p>Última Modificação: <span id="ultima-modificacao"></span></p>
+    </footer>
+</body>
+</html>
