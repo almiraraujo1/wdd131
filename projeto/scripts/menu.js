@@ -30,7 +30,6 @@ function mostrarAno() {
   ano.textContent = `${new Date().getFullYear()}`;
 }
 
-
 // ===== Início do programa =====
 
 // Quando clicar no botão, chama a função alternarMenu

@@ -91,7 +91,6 @@ function mudarFiltro() {
   mostrarTurmas(filtro.value);
 }
 
-
 // ===== Início do programa =====
 
 // Busca no navegador o nível que o visitante escolheu da última vez

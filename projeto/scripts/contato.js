@@ -59,7 +59,6 @@ function enviarFormulario(evento) {
   }
 }
 
-
 // ===== Início do programa =====
 
 // Ao abrir a página, preenche o nome se ele já estiver salvo
