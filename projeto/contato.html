@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Almir Araujo">
+  <meta name="description" content="Envie suas dúvidas e veja o endereço do Fire Fight.">
+  <title>Contato – Fire Fight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/estilo.css">
+
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/contato.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="topo">
+      <a class="marca" href="index.html">
+        <img src="imagens/logo.svg" alt="" width="48" height="48">Fire Fight
+      </a>
+
+      <button id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+    </div>
+
+    <nav aria-label="Principal">
+      <ul id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="muaythai.html">O Muay Thai</a></li>
+        <li><a href="turmas.html">Turmas</a></li>
+        <!-- aria-current="page" indica a página em que o visitante está -->
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contato</h1>
+    <p>Envie sua dúvida para a organização.</p>
+
+    <!-- Formulário de contato (o contato.js cuida do envio e do aviso) -->
+    <form id="form-contato">
+
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" autocomplete="name" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" autocomplete="email" required>
+
+      <label for="assunto">Assunto</label>
+      <select id="assunto" name="assunto">
+        <option>Dúvida sobre turmas</option>
+        <option>Aula experimental</option>
+        <option>Horários e endereço</option>
+        <option>Outro</option>
+      </select>
+
+      <fieldset>
+        <legend>Você já treinou Muay Thai?</legend>
+        <label><input type="radio" name="experiencia" value="nunca" required> Nunca treinei</label>
+        <label><input type="radio" name="experiencia" value="ja"> Já treinei</label>
+      </fieldset>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button class="botao" type="submit">Enviar</button>
+
+      <!-- Aviso escondido; o JavaScript mostra quando precisar (hidden = invisível) -->
+      <p id="aviso" class="aviso" role="alert" hidden></p>
+    </form>
+
+    <section>
+      <h2>Onde treinamos</h2>
+      <address>Academia Fire Fight<br>Rua das Palmeiras, 123 – Centro</address>
+      <p>Atendimento: segunda a sexta, das 17h às 21h; sábado, das 8h às 11h.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="ano">2026</span> Fire Fight · Rua Trezentos e Dezenove, 68 - Nova Metrópole (Jurema), Caucaia - CE, 61658-600</p>
+    <p><a href="referencias.html">Referências</a> · <a href="contato.html">Fale com a gente</a></p>
+  </footer>
+</body>
+
+</html>

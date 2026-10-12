@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Almir Araujo">
+  <meta name="description" content="Conheça as turmas de Muay Thai, com dias, horários e níveis.">
+  <title>Turmas – Fire Fight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/estilo.css">
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/turmas.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="topo">
+      <a class="marca" href="index.html">
+        <img src="imagens/logo.svg" alt="" width="48" height="48">Fire Fight
+      </a>
+
+      <button id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+    </div>
+
+    <nav aria-label="Principal">
+      <ul id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="muaythai.html">O Muay Thai</a></li>
+        <!-- aria-current="page" indica a página em que o visitante está -->
+        <li><a href="turmas.html" aria-current="page">Turmas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Turmas</h1>
+    <p>Escolha o seu nível e veja os dias e horários.</p>
+
+    <!-- Filtro: o visitante escolhe o nível e o JavaScript mostra só as turmas desse nível -->
+    <label for="filtro-nivel">Mostrar turmas de nível:</label>
+    <select id="filtro-nivel" name="nivel">
+      <option value="todas">Todas</option>
+      <option value="iniciante">Iniciante</option>
+      <option value="intermediario">Intermediário</option>
+      <option value="avancado">Avançado</option>
+    </select>
+
+    <!-- Resumo preenchido pelo JavaScript (aria-live avisa leitores de tela quando o texto muda) -->
+    <p id="resumo-turmas" aria-live="polite"></p>
+
+    <!-- Lista de turmas: os cartões são criados pelo JavaScript (turmas.js) -->
+    <section>
+      <h2>Turmas disponíveis</h2>
+      <div id="lista-turmas" class="cartoes">
+        <!-- Mensagem mostrada só se o JavaScript estiver desativado -->
+        <noscript>Ative o JavaScript para ver as turmas.</noscript>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="ano">2026</span> Fire Fight · Rua Trezentos e Dezenove, 68 - Nova Metrópole (Jurema), Caucaia - CE, 61658-600</p>
+    <p><a href="referencias.html">Referências</a> · <a href="contato.html">Fale com a gente</a></p>
+  </footer>
+</body>
+
+</html>

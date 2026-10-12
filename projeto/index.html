@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Almir Araujo">
+  <meta name="description" content="Fire Fight: site sobre Muay Thai, turmas e contato.">
+  <title>Início – Fire Fight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/estilo.css">
+  <script src="scripts/menu.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="topo">
+      <a class="marca" href="index.html">
+        <img src="imagens/logo.svg" alt="" width="48" height="48">Fire Fight
+      </a>
+
+      <!-- Botão que abre e fecha o menu no celular -->
+      <button id="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+    </div>
+
+    <nav aria-label="Principal">
+      <ul id="menu-principal">
+        <!-- aria-current="page" indica a página em que o visitante está -->
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="muaythai.html">O Muay Thai</a></li>
+        <li><a href="turmas.html">Turmas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="destaque">
+      <div>
+        <h1>Muay Thai: a arte das oito armas</h1>
+        <p>O Fire Fight reúne quem quer aprender e praticar Muay Thai. Aqui você conhece a modalidade, escolhe a turma ideal e tira suas dúvidas com a organização.</p>
+        <a class="botao" href="turmas.html">Ver turmas</a>
+      </div>
+      <img src="imagens/hero.svg" alt="Chama sobre as cordas de um ringue de luta" width="600" height="400">
+    </section>
+
+    <section>
+      <h2>Por que treinar Muay Thai?</h2>
+
+      <div class="cartoes">
+        <article class="cartao">
+          <h3>Corpo em movimento</h3>
+          <p>O treino trabalha resistência, força, flexibilidade e coordenação ao mesmo tempo.</p>
+        </article>
+
+        <article class="cartao">
+          <h3>Mente mais leve</h3>
+          <p>Concentrar-se no treino ajuda a aliviar o estresse e a criar disciplina no dia a dia.</p>
+        </article>
+
+        <article class="cartao">
+          <h3>Para todos os níveis</h3>
+          <p>Há turmas para iniciantes e para quem já treina, sempre com acompanhamento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="chamada">
+      <h2>Tem dúvidas? Fale com a gente</h2>
+      <a class="botao" href="contato.html">Enviar mensagem</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="ano">2026</span> Fire Fight · Rua Trezentos e Dezenove, 68 - Nova Metrópole (Jurema), Caucaia - CE, 61658-600</p>
+    <p><a href="referencias.html">Referências</a> · <a href="contato.html">Fale com a gente</a></p>
+  </footer>
+</body>
+
+</html>

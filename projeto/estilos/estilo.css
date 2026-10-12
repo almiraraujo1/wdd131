@@ -1,0 +1,248 @@
+/* ===== Regras gerais ===== */
+
+/* Faz a largura dos elementos incluir o padding e a borda */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  line-height: 1.6;
+  color: #14213d;
+  background-color: #f5f5f2;
+}
+
+
+h1,h2,h3,.botao,.marca {
+  font-family: "Barlow Condensed", Arial, sans-serif;
+}
+
+h2 {
+  color: #c1272d;
+}
+
+a {
+  color: #c1272d;
+}
+
+/* Imagens nunca passam da largura da tela */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: #14213d;
+  border-bottom: 5px solid #c1272d;
+  padding: 10px 20px;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logotipo + nome do site */
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f5f5f2;
+  text-decoration: none;
+}
+
+/* Tamanho do logotipo */
+.marca img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Botão que abre o menu no celular */
+#botao-menu {
+  background: none;
+  border: 2px solid #e0b04a;
+  color: #e0b04a;
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Menu escondido por padrão (no celular) */
+nav ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Quando o JavaScript adiciona a classe "aberto", o menu aparece */
+nav ul.aberto {
+  display: block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 0;
+  color: #f5f5f2;
+  text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+  color: #e0b04a;
+  font-weight: bold;
+}
+
+/* Centraliza o conteúdo e limita a largura */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Destaque da página inicial (texto + imagem) */
+.destaque {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #c1272d;
+  color: #f5f5f2;
+  border: none;
+  padding: 10px 24px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Grade de cartões: as colunas se ajustam ao tamanho da tela */
+.cartoes {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.cartao {
+  background-color: #fff;
+  border: 1px solid #5b6475;
+  border-top: 5px solid #e0b04a;
+  padding: 15px;
+}
+
+.nivel {
+  color: #5b6475;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.chamada {
+  background-color: #14213d;
+  color: #f5f5f2;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+
+.chamada .botao {
+  background-color: #e0b04a;
+  color: #14213d;
+}
+
+/* Largura máxima do formulário */
+form {
+  max-width: 600px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  font: inherit;
+  border: 2px solid #5b6475;
+}
+
+fieldset {
+  margin-top: 15px;
+  border: 2px solid #5b6475;
+}
+
+fieldset label {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+input[type="radio"] {
+  width: auto;
+}
+
+form .botao {
+  margin-top: 20px;
+}
+
+.aviso {
+  background-color: #fff;
+  border-left: 5px solid #e0b04a;
+  padding: 10px;
+}
+
+.aviso.erro {
+  border-left-color: #c1272d;
+}
+
+address {
+  font-style: normal;
+}
+
+footer {
+  background-color: #14213d;
+  color: #f5f5f2;
+  text-align: center;
+  padding: 20px;
+  border-top: 5px solid #e0b04a;
+}
+
+footer a {
+  color: #e0b04a;
+}
+
+
+/* ===== Telas maiores (a partir de 700px) ===== */
+@media (min-width: 700px) {
+
+  /* Logotipo à esquerda e menu à direita */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Esconde o botão do menu */
+  #botao-menu {
+    display: none;
+  }
+
+  /* Menu sempre visível, com os links lado a lado */
+  nav ul,
+  nav ul.aberto {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Destaque em duas colunas: texto e imagem lado a lado */
+  .destaque {
+    grid-template-columns: 1fr 1fr;
+  }
+}
